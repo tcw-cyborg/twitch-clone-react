@@ -340,3 +340,89 @@ TopStreams
     margin: 0 0 30px 0;
   }
 }
+
+/*
+//////////////////////////////////
+Live
+///////////////////////////////// 
+ */
+
+.containerDecale {
+  overflow-x: hidden;
+  padding-top: 50px;
+  padding-left: 239px;
+}
+
+.contInfo {
+  color: #19171c;
+  display: grid;
+  height: 156px;
+  width: calc(100% - 340px);
+  grid-template: repeat(3, 35px) / 1fr 1fr;
+  margin-top: 5px;
+}
+
+.titreStream {
+  grid-area: 1 / 1 / 2 / 3;
+  text-align: left;
+  margin-left: 5px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.viewer {
+  grid-area: 1 / 2 / 2 / 3;
+  text-align: right;
+  color: crimson;
+  font-weight: 700;
+  margin: 3px 5px 0 0;
+}
+
+.infogame {
+  grid-area: 2 / 1 / 3 / 3;
+  text-align: left;
+  margin-left: 5px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.nomJeu {
+  grid-area: 3 / 1 / 4 / 2;
+  text-align: left;
+  margin-left: 5px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .containerDecale {
+    padding-left: 0;
+  }
+  .contInfo {
+    width: calc(100%);
+  }
+  .viewer {
+    margin: 5px 25px 0 0;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .contInfo {
+    grid-template: 45px 35px 35px 35px / 1fr 1fr;
+  }
+  .titreStream {
+    font-size: 14px;
+  }
+  .nomJeu {
+    font-size: 14px;
+  }
+  .infogame {
+    font-size: 14px;
+  }
+  .viewer {
+    font-size: 14px;
+    margin: 0 0 0 5px;
+    grid-area: 4 / 1 / 5 / 2;
+    text-align: left;
+  }
+}

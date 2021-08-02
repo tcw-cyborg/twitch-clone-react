@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 // useState permet d'avoir du state dans un composant de type fonction.
 // useEffect permet de faire appel à l'API.
 import api from "../../api";
+import { Link } from "react-router-dom";
 
 function Games() {
   const [games, setGames] = useState([]);
@@ -35,7 +36,17 @@ function Games() {
             <img src={game.box_art_url} alt="jeu profile pic" className="imgCarte" />
             <div className="cardBodyGames">
               <h5 className="titreCartesGames">{game.name}</h5>
+              <Link 
+              className="lien"
+              to={{
+                pathname: "game/" + game.name,
+                state: {
+                  gameID: game.id,
+                }
+              }}
+              >
               <div className="btnCarte">Regarder {game.name}</div>
+              </Link>
             </div>
           </div>
         ))}

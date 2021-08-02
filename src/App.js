@@ -6,6 +6,7 @@ import Games from "./components/Games/Games";
 import TopStreams from "./components/TopStreams/TopStreams";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Live from "./components/Live/Live";
+import GameStreams from "./components/GameStreams/GameStreams";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route exact path="/" component={Games} />
           <Route exact path="/top-streams" component={TopStreams} />
           <Route exact path="/live/:slug" component={Live} />
+          <Route exact path="/game/:slug" component={GameStreams} />
         </Switch>
       </div>
     </Router>
