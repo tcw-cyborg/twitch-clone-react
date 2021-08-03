@@ -68,7 +68,6 @@ function GameStreams() {
 
   return (
     <div>
-    <br /><br /><br /><br /><br /><br /><br />
     <h1 className="titreGamesStreams">Streams : {slug}</h1>
     <h3 className="sousTitreGameStreams">
       <strong className="textColored">{viewers}</strong> personnes regardent {slug}
