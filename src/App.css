@@ -96,7 +96,7 @@ Header
 }
 
 .menuIco {
-  width: 50px;
+  width: 25px;
 }
 
 @media screen and (max-width: 950px) {
@@ -548,7 +548,6 @@ Resultats
   margin-bottom: 35px;
   position: relative;
   transition: all 0.4s;
-  /* Proprietes bootstrap */
   border-radius: 10px;
   box-shadow: 2px 11px 36px -16px rgba(0, 0, 0, 0.75);
   margin-top: 20px;
@@ -582,7 +581,14 @@ Resultats
   color: #000;
 }
 
-/* Custom */
+.spanTxt {
+  color: #000 !important;
+}
+
+.titreResultats {
+  padding-top: 50px;
+}
+
 @media screen and (max-width: 1200px) {
   .containerDecaleResultats {
     overflow-x: hidden;
@@ -603,12 +609,4 @@ Resultats
     height: 580px;
     width: 300px;
   }
-}
-
-.spanTxt {
-  color: #000 !important;
-}
-
-.titreResultats {
-  padding-top: 50px;
 }
