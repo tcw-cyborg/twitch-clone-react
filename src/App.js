@@ -12,7 +12,7 @@ import Erreur from "./components/Erreur/Erreur";
 
 function App() {
   return (
-    <Router>
+    <Router forceRefresh={true}>
       <div className="App">
         <Header />
         <Sidebar />
