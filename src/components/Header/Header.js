@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import logo from "./IconeTwitch.svg";
+// import logo from "./IconeTwitch.svg";
 import search from "./Search.svg";
 import menuIco from "./MenuIco.svg";
 import croix from "./Croix.svg";
@@ -52,11 +52,11 @@ function Header() {
       <nav className="headerTop">
         {(menu || !smallScreen) && (
           <ul className="listeMenu">
-            <li onClick={hideMenu} className="liensNav">
+            {/* <li onClick={hideMenu} className="liensNav">
               <Link className="lien" to="/">
                 <img src={logo} alt="logo twitch" className="logo" />
               </Link>
-            </li>
+            </li> */}
             <li onClick={hideMenu} className="liensNav">
               <Link className="lien" to="/">
                 Top Games
